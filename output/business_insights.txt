@@ -1,0 +1,39 @@
+BUSINESS INSIGHTS - QUANTITATIVE ALGORITHMIC TRADING ARCHITECTURE
+=================================================================
+
+1. OVERALL PERFORMANCE
+   - 50,000 total trades executed across 50 instruments
+     and 10 strategies.
+   - Win rate stands at 50.06% (25,028 winning / 24,972 losing trades).
+   - Net P&L across the analyzed period: 99,227,435.01.
+   - Profit factor of 1.011 indicates the ratio of gross profit to gross loss.
+
+2. STRATEGY INSIGHTS
+   - Best performing strategy by net P&L: "Statistical Arbitrage"
+     (Arbitrage, High risk) with net P&L of
+     85,021,317.91 and a win rate of 50.91%.
+   - Weakest performing strategy by net P&L: "Mean Reversion"
+     with net P&L of -40,344,449.22.
+
+3. RISK INSIGHTS
+   - Highest average risk score strategy: "Scalping"
+     (avg risk score 53.3096, avg Sharpe 1.101).
+   - Portfolio-level maximum drawdown observed: -7.0%.
+   - Annualized portfolio volatility: 25.29%.
+   - Annualized Sharpe ratio: 0.537.
+
+4. INSTRUMENT INSIGHTS
+   - Top performing instrument by net P&L: SYM041
+     (Equity / Real Estate) with net P&L of
+     46,249,451.64 and win rate 53.1%.
+
+5. RECOMMENDATIONS
+   - Reallocate capital toward strategies with consistently higher win rate and
+     profit factor (see strategy_performance.csv), while trimming exposure to
+     the weakest-performing strategy identified above.
+   - Investigate the highest-risk-score strategy for position sizing adjustments,
+     given its risk profile relative to its realized Sharpe ratio.
+   - Monitor drawdown periods closely and consider a volatility-based stop
+     mechanism for high-volatility-class instruments.
+   - Use signal accuracy from fact_strategy_signals.csv to further filter
+     entries for strategies with below-average signal correctness.

@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+data/raw/*.csv
+data/processed/*.csv
+
+output/*.csv
+output/charts/*.png
+
+.DS_Store
+.vscode/
+*.log
